@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    padding: 90px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    height: 280px;
+    font-weight: 330px;
+}
+
+#img1 {
+    display: block;
+    accent-color: hsl(277, 64%, 61%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#img2 {
+    display: none;
+    accent-color: hsl(277, 64%, 61%);
+}
+
+.page {
+    background-color: hsl(244, 38%, 16%);
+    padding: 30px;
+    width: 330px;
+    height: 280px;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding: 0;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 10px;
+    margin: 40px 0;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.stats div {
+    padding-right: 55px;
+}
+
+@media (max-width:452px) {
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+        align-items: center;
+        font-size: 15px;
+    }
+    #img1 {display: none;}
+    #img2 {
+        display: block;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .page {
+        text-align: center;
+        height: 490px;
+        padding: 30px;
+        width: 330px;
+        align-items: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+    }
+
+    p {
+        font-size: 13px;
+        padding: 25px;
+    }
+
+    .stats {
+        flex-direction: column;
+        padding: 15px;
+        margin: 0%;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .stats div {
+        padding: 0;
+    }
+}
